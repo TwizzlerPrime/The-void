@@ -1,0 +1,11 @@
+Health=100
+Energy=50
+
+echo "Welcome to The Void... you're cooked pal."
+echo "You are lost in a dark well of corruption; you may not survive."
+
+display_status() {
+        echo "Health: $Health"
+        echo "Energy: $Energy"
+        echo ""
+ }
