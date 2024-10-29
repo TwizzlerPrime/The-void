@@ -9,3 +9,10 @@ display_status() {
         echo "Energy: $Energy"
         echo ""
  }
+
+echo "A silhouette of the Reaper dawns upon you, and he asks: 'Do you wish to tresspass unto my territory?'"
+read -p "Make your move. (yes/no):" proceed
+
+if [[ $proceed == "no" ]]; then
+        echo "Coward, leave this place and never return."
+        exit 0
