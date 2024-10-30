@@ -16,3 +16,6 @@ read -p "Make your move. (yes/no):" proceed
 if [[ $proceed == "no" ]]; then
         echo "Coward, leave this place and never return."
         exit 0
+elif [[ $proceed == "yes" ]]; then
+        echo "I pity you and your confidence. Good luck."
+        exit 0
