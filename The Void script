@@ -19,3 +19,20 @@ if [[ $proceed == "no" ]]; then
 elif [[ $proceed == "yes" ]]; then
         echo "I pity you and your confidence. Good luck."
         display_status
+
+echo "As you enter what seems to be a cavern, you spot a portal, a collapsing cave, and.. a book?
+echo "What will you inspect?"
+
+read -p "Decide: portal,cave,book: " choice
+
+if [[ $choice == "portal" ]]; then
+        echo "You approach the portal, but you get dizzy and are whisked away to a different section of the void."
+        Energy=$((Energy - 10))
+       display_status
+elif [[ $choice == "cave" ]]; then
+     echo "The cave you enter seems to have been struck by a mysterious force."
+        echo "The cave collapses, and you have been hit by a few boulders."
+        Health=$((Health - 20))
+        display_status
+fi
+
