@@ -63,6 +63,10 @@ if [[ $defense == "sword" && $Energy -ge $sword_energy ]]; then
         echo "When the Darkheart attacks, you parry the attack and deflect it b>
         Energy=$((Energy - sword_energy))
         break
+elif [[ $defense == "pulsegun" && $Energy -ge $pulsegun_energy ]]; then
+            echo "You fire your pulsegun, landing a direct hit and damaging the Darkheart!"
+            Energy=$((Energy - pulsegun_energy))\
+            break
      fi 
  done
 }
