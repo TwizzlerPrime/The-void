@@ -49,3 +49,25 @@ echo "You stand there, confused, waiting for something to happen..(try again)"
 fi
 done
 
+echo "You enter the Sanctuary, the homes of the Darkhearts and alchemists."
+
+sanctuary_encounter() {
+    local sword_energy=10
+    local pulsegun_energy=15
+    local spell_energy=20
+while true; do
+
+        read -p "Suddenly, pulsating, weaponized energy barely misses you; a Da>
+
+if [[ $defense == "sword" && $Energy -ge $sword_energy ]]; then
+        echo "When the Darkheart attacks, you parry the attack and deflect it b>
+        Energy=$((Energy - sword_energy))
+        break
+     fi 
+ done
+}
+
+sanctuary_encounter
+
+display_status
+
